@@ -20,6 +20,6 @@ if ( argv.help == true ) {
 	process.exit(1);
 }
 
-teslams.vehicles( { email: creds.username, password: creds.password }, function ( response ) {
+teslams.vehicles( { email: creds.username, password: creds.password, token: creds.token }, function ( response ) {
 	console.log( util.inspect( response ) );
-}); 
+});
