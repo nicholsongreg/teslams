@@ -304,8 +304,8 @@ var live_stream = {
 			var newchunk = d.replace(/[\n\r]/g, '');
 			var array = newchunk.split(',');
 			var streamdata = {
-				id_s : vid.toString(),
-				vehicle_id : long_vid,
+				// id_s : vid.toString(),
+				// vehicle_id : long_vid,
 				timestamp : array[0],
 				speed : array[1],
 				odometer : array[2],
