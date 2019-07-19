@@ -571,7 +571,7 @@ function storeVehicles(vehicles) {
 function initdb(vehicles) {
     storeVehicles(vehicles);
     getAux.vid = vehicles.id;
-    // setInterval(getAux, 60000); // also get non-streaming data every 60 seconds
+    setInterval(getAux, 60000); // also get non-streaming data every 60 seconds
 }
 
 function ulog(string) {
