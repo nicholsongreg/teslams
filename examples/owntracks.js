@@ -115,6 +115,8 @@ if (process.env.OWNTRACKS) { argv.owntracks = process.env.OWNTRACKS };
 if (process.env.OWNTID) { argv.owntid = process.env.OWNTID };
 if (process.env.TOPIC) { argv.topic = process.env.TOPIC };
 
+if (argv.owntracks) { console.log('Logging Owntracks \n'); }
+
 if (!argv.db && !argv.awsiot && !argv.mqtt && !argv.file) {
     console.log('No outputs specified. Add one (or more) of --db, --file, --mqtt, or --awsiot flags to specify outputs');
     process.exit();
