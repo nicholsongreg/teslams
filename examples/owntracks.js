@@ -288,15 +288,15 @@ var live_stream = {
                 case 'control:hello':
                     break;
                 case 'data:error':
-                    util.log('data:error ' + msg.error_type);
+                    console.log('data:error ' + msg.error_type);
                     this.ws.close();
                     break;
                 case 'data:update':
-                    util.log(msg.value);
+                    console.log(msg.value);
                     this.update(msg.value);
                     break;
                 default:
-                    util.log(msg);
+                    console.log(msg);
                     break;
             }
         });
