@@ -292,6 +292,7 @@ var live_stream = {
                     this.ws.close();
                     break;
                 case 'data:update':
+                    util.log(msg.value);
                     this.update(msg.value);
                     break;
                 default:
