@@ -359,7 +359,7 @@ var live_stream = {
                     console.log('Error while publishing message to mqtt broker: ' + error.toString());
                 }
                 try {
-                    client.publish(argv.owntracks + '/streaming', true);
+                    client.publish(argv.owntracks + '/streaming', 'true');
                 }
                 catch (error) {
                     console.log('Error while publishing message to mqtt broker: ' + error.toString());
